@@ -1,0 +1,32 @@
+<script
+  src="https://www.paypal.com/sdk/js?client-id=BAABnCnrMuYJbTIliJ6ZF4vrc1xozMOcmYhZfZmAziYvWHYqR_nHFX89yMLtNmxsTRvCHu7SJPA3r-bZsE&components=hosted-buttons&enable-funding=venmo&currency=USD" 
+  crossorigin="anonymous" 
+  async>
+</script>
+
+
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+
+export default function App() {
+    const initialOptions = {
+		      clientId: "ARZfF4s4Q_AxeWoO8ULKXc0QYrqIZgBlu8hwdBqgacXcb-rSuGkQp1Sb-3KYFmYgaZD6SbypeyzOajbO"
+
+    };
+
+    const styles = {
+        shape: "rect",
+        layout: "vertical",
+    };
+
+    return (
+        <div className="civil processing"> 
+            <PayPalScriptProvider options={initialOptions}>
+                <PayPalButtons style={vertical} />
+            </PayPalScriptProvider><script
+  src="https://www.paypal.com/sdk/js?client-id=BAABnCnrMuYJbTIliJ6ZF4vrc1xozMOcmYhZfZmAziYvWHYqR_nHFX89yMLtNmxsTRvCHu7SJPA3r-bZsE&components=hosted-buttons&enable-funding=venmo&currency=USD" 
+  crossorigin="anonymous" 
+  async>
+</script>
+        </div>
+    );
+}
